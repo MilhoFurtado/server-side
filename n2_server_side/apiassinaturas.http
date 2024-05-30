@@ -1,0 +1,32 @@
+GET http://localhost:3000/assinaturas HTTP/1.1
+content-Type: application/json
+###
+
+GET  http://localhost:3000/assinaturas/lucas HTTP/1.1
+content-Type: application/json
+###
+
+POST http://localhost:3000/assinaturas HTTP/1.1
+Content-Type: application/json
+
+{
+    "cpf_ass":123456,
+    "nome":"joa",
+    "email":"joa@gmail.com",
+    "codass":3
+}
+###
+
+PUT http://localhost:3000/assinaturas/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "cpf_ass":123456,
+    "nome":"joana",
+    "email":"jo@gmail.com"
+}
+###
+
+DELETE http://localhost:3000/assinaturas/3 HTTP/1.1
+Content-Type: application/json
+###
